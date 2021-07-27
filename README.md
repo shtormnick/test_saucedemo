@@ -5,7 +5,7 @@ This project created as test task
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pytest, selenium, WebDriverManager, 
 
 ```bash
-pip install pytest<br/>
-pip install selenium<br/>
-pip install WebDriverManager<br/>
+pip install pytest
+pip install selenium
+pip install WebDriverManager
 ```
