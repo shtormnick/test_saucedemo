@@ -26,12 +26,12 @@ class BasePage():
             return False
         return True
     
-    def element_is_not_present(self, how, what, timeout=10):
+    def element_is_not_present(self, how, what, timeout=4):
         try:
             WebDriverWait(self.browser, timeout).until(
                 EC.presence_of_element_located((how, what))
             )
         except TimeoutException:
-            return False
-        return True
+            return True
+        return False
     
