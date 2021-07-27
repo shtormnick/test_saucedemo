@@ -11,19 +11,19 @@ pip install WebDriverManager
 ```
 
 ### Commands 
-you can run autotests by next commands 
-and next atributs 
-–maxfail=n stops execution after nth failure. n can be any number such as 1.2.3
--rA this gives output of all tests
-f- failed
-E- error
-s- skipped
-x- xfailed
-X- xpassed
-p- passed
-P-passed with output
-a- all except pP
-A- all
--m only the tests defined by the marker will run after this command.
+you can run autotests by next commands <br />
+and next atributs <br />
+–maxfail=n stops execution after nth failure. n can be any number such as 1.2.3 <br />
+-rA this gives output of all tests <br />
+f- failed <br />
+E- error <br /> 
+s- skipped <br />
+x- xfailed <br />
+X- xpassed <br />
+p- passed <br />
+P-passed with output <br />
+a- all except pP <br />
+A- all <br />
+-m only the tests defined by the marker will run after this command. <br />
 ```
 pytest .\test_filter.py
