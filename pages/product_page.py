@@ -40,5 +40,5 @@ class ProductPage(BasePage):
         list_of_items = re.findall(price,list_of_items)
         list_of_items = list(map(float, list_of_items))
         sorted_list_of_items = list_of_items[:]
-        sorted_list_of_items.sort()
-        assert list_of_items != sorted_list_of_items, "Filter sorted by Desc price"
+        sorted_list_of_items.sort(reverse=True)
+        assert list_of_items == sorted_list_of_items, "Filter sorted by Desc price"
