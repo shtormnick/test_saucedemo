@@ -7,12 +7,12 @@ class BasePage():
     '''
         This class describs common functions than we can use on any page 
     '''
-    def __init__(self, brouser, url):
-        self.brouser = brouser
+    def __init__(self, browser, url):
+        self.browser = browser
         self.url = url
     
     def open(self):
-        self.brouser.get(self.url)
+        self.browser.get(self.url)
 
     def go_to_cart_page(self):
         button = self.browser.find_element(*BasePageLocators.CART_LINK_ON_PRODUCT_PAGE)

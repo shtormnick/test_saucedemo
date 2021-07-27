@@ -22,7 +22,7 @@ class CartPageLocators():
 
 class ProductPageLocators():
     HEADER_TEXT_ON_PRODUCT_PAGE = (By.XPATH, "//*[@id=\"header_container\"]/div[2]/span")
-    ADD_TO_CART = (By.ID, "add-to-cart-sauce-labs-backpack")
+    ADD_TO_CART = (By.XPATH, "//*[.=\"Add to cart\"]")
     PRICE = (By.CLASS_NAME, "inventory_item_price")
     NAME = (By.CLASS_NAME, "inventory_item_name")
     INVENTORY_LIST = (By.CLASS_NAME, "inventory_list")
