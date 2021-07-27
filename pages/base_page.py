@@ -15,7 +15,7 @@ class BasePage():
         self.browser.get(self.url)
 
     def go_to_cart_page(self):
-        button = self.browser.find_element(*BasePageLocators.CART_LINK_ON_PRODUCT_PAGE)
+        button = self.browser.find_element(*BasePageLocators.CART_LINK)
         button.click()
         assert "cart" in self.browser.current_url, "Wrong page (not a Cart page)"
 

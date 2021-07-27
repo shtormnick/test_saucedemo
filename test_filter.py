@@ -4,6 +4,13 @@ from pages.product_page import ProductPage
 
 @pytest.mark.main_test
 class TestLoginFormProductPage():
+    @pytest.mark.checker
+    def test_guest_can_see_title(self, browser, setup):
+        link = "https://www.saucedemo.com/inventory.html"
+        self.page = ProductPage(browser, link)
+        self.page.open()
+        self.page.go_to_cart_page()
+        self.page.should_be_correct_title()
 
     def test_guest_can_add_item_to_cart(self, browser, setup):
         link = "https://www.saucedemo.com/inventory.html"

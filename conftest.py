@@ -34,10 +34,8 @@ def browser(request):
     browser.quit()
 
 @pytest.fixture(scope="function")
-def setup(browser, request):
+def setup(browser, request, name="standard_user", password="secret_sauce"):
     link = "https://www.saucedemo.com/"
-    name = "standard_user"
-    password = "secret_sauce"
     login_page = LoginPage(browser, link)
     login_page.open()
     login_page.register_new_user(name, password)
