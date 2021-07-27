@@ -23,4 +23,12 @@ class LoginPage(BasePage):
             *LoginPageLocators.LOGIN_INPUT
         ), "Login input imput is absent on Login page"
 
-    def should_be_login_button():
+    def should_be_login_button(self):
+        assert self.is_element_present(
+            *LoginPageLocators.LOGIN_BUTTON), "Button is not present at Login page"
+
+    def register_new_user(self, name, password):
+        self.brouser.find_element(*LoginPageLocators.LOGIN_INPUT).send_keys(name)
+        self.brouser.find_element(*LoginPageLocators.PASSWORD_INPUT).send_keys(password)
+        self.brouser.find_element(*LoginPageLocators.LOGIN_BUTTON).click()
+        
