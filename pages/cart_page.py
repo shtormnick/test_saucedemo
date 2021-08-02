@@ -3,6 +3,9 @@ from .base_page import BasePage
 
 
 class CartPage(BasePage):
+    """
+        CartPage class describe tests which connected with functional and visual elements on current page 
+    """
 
     def cart_shuld_be_empty(self):
         assert self.element_is_not_present(

@@ -16,7 +16,7 @@ class TestLoginFormProductPage():
         link = "https://www.saucedemo.com/inventory.html"
         self.page = ProductPage(browser, link)
         self.page.open()
-        self.page.add_to_cart()
+        self.page.add_to_cart_one_item()
 
     def test_guest_add_to_cart_filtered_by_low_price_items(self, browser, setup):
         link = "https://www.saucedemo.com/inventory.html"

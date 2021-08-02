@@ -1,6 +1,8 @@
 # Test Project
 This project created as test task
 
+Create Python automation scenarios for checking filtering by price and adding products to the shopping cart on https://www.saucedemo.com/ for standard_user.
+
 ## Installation
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pytest, selenium, WebDriverManager, 
 
